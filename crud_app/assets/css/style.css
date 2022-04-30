@@ -139,3 +139,48 @@ table{
     }
 
 }
+
+.form-title{
+    margin-top: 2em;
+}
+
+.form-title >h2{
+    padding: .5em 0;
+}
+
+.new_user{
+    max-width: 786px;
+    margin: auto;
+}
+
+.form-group{
+    margin: 0.4em 0;
+}
+
+.form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+.btn1 {
+    width: 100%;
+    padding: .9em 1em;
+    background-color:#adb5bd;
+    border: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin:.5em 0;
+}
+
+.btn1.hover
+{
+    background-color:var(--dark);
+    color:var(--border);
+}
