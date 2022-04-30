@@ -1,0 +1,54 @@
+<!--include header-->
+<%-include('include/_header')%>
+<!--/include header-->
+
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/"><i class="fas fa-angle-double-left"></i>All Recruiter Details</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update Recruiter Details</h2>
+            <span class="text-light">Use below form to update recuiter information</span>
+        </div>
+
+        <form method="POST" id="update_user">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for="name" class="text-light">Recruiter Name</label>
+                    <input type="hidden" name="id" value="">
+                    <input type="text" name="name" value="" placeholder="Vedant Desai">
+                </div>
+                <div class="form-group">
+                    <label for="company" class="text-light">Company</label>
+                    <input type="text" name="company" value="" placeholder="NASA">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-light">Email</label>
+                    <input type="text" name="email" value="" placeholder="vedant.desai@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="hiringRole" class="text-light">Hiring Role</label>
+                    <input type="text" name="hiringRole" value="" placeholder="Software Development 2">
+                </div>
+                <div class="form-group">
+                    <label for="status" class="text-light">Status</label>
+                    <input type="text" name="status" value="" placeholder="In Touch">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn1 text-dark update">Submit</button>
+                </div>
+            </div>
+        </form>
+       
+    </div>
+</main>
+
+
+
+<!--include footer-->
+<%-include('include/_footer')%>
+<!--include footer-->

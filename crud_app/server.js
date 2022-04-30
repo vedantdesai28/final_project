@@ -23,7 +23,14 @@ app.use('/js',express.static(path.resolve(__dirname,"assets/js")))
 
 app.get('/',(req,res)=>{
     res.render('index');
-    //res.send("User Management System");
+})
+
+app.get('/add_recruiter',(req,res)=>{
+    res.render('add_recruiter');
+})
+
+app.get('/update_recruiter',(req,res)=>{
+    res.render('update_recruiter');
 })
 
 app.listen(PORT,()=>{console.log(`The application is running on http://localhost:${PORT}`)});
